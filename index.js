@@ -2,7 +2,7 @@ let loadLessBtn = document.querySelectorAll("[data-loadless-btn]");
 
 let loadless_config = {
     showNth : 0,
-    showAll : true  
+    showAll : false  
 };
 
 [].forEach.call(loadLessBtn, function (el) {
