@@ -1,0 +1,19 @@
+{
+  "name": "loadless",
+  "version": "1.0.0",
+  "description": "loadless is a javascipt library that enables reactive pages using pure Javascript",
+  "main": "index.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loadless/loadless.js.git"
+  },
+  "author": "Loadless",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loadless/loadless.js/issues"
+  },
+  "homepage": "https://github.com/loadless/loadless.js#readme"
+}
