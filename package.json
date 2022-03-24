@@ -1,6 +1,6 @@
 {
   "name": "loadless",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "loadless is a javascipt library that enables reactive pages using pure Javascript",
   "main": "index.min.js",
   "scripts": {
