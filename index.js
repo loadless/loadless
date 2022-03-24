@@ -20,7 +20,7 @@ changePage = (page) => {
   });
 };
 
-function func_on_load() {
+document.onload = function () {
   let location = window.location.href;
   if (location.length > 0 && location.indexOf("#") > -1) {
     element_id = location.split("#")[1];
@@ -31,7 +31,6 @@ function func_on_load() {
     }
   }
   var parent = document.querySelectorAll("[data-parent]");
-  // For each div
   [].forEach.call(parent, function (el) {
     var children = el.querySelectorAll("[data-page]");
     let n = 0;
@@ -44,4 +43,3 @@ function func_on_load() {
   });
 }
 
-document.onload = func_on_load();
