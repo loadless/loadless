@@ -1,4 +1,4 @@
-var loadLessBtn = document.querySelectorAll("[data-loadless-btn]");
+let loadLessBtn = document.querySelectorAll("[data-loadless-btn]");
 
 [].forEach.call(loadLessBtn, function (el) {
   el.addEventListener("click", function () {
@@ -10,8 +10,7 @@ var loadLessBtn = document.querySelectorAll("[data-loadless-btn]");
 });
 
 changePage = (page) => {
-  var siblings = page.parentElement.children;
-  [].forEach.call(siblings, function (el) {
+  [].forEach.call(page.parentElement.children, function (el) {
     if (el.dataset.page == page.dataset.page) {
       el.style.display = "block";
     } else {
@@ -20,18 +19,16 @@ changePage = (page) => {
   });
 };
 
-document.onload = function () {
+function func_on_load() {
   let location = window.location.href;
   if (location.length > 0 && location.indexOf("#") > -1) {
-    element_id = location.split("#")[1];
-    el = document.getElementById(element_id);
+    el = document.getElementById(location.split("#")[1]);
     if (el) {
-      changePage();
+      changePage(el);
       return;
     }
   }
-  var parent = document.querySelectorAll("[data-parent]");
-  [].forEach.call(parent, function (el) {
+  [].forEach.call(document.querySelectorAll("[data-parent]"), function (el) {
     var children = el.querySelectorAll("[data-page]");
     let n = 0;
     [].forEach.call(children, function (child) {
@@ -43,3 +40,4 @@ document.onload = function () {
   });
 }
 
+document.onload = func_on_load();
