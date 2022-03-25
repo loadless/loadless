@@ -9,14 +9,10 @@ loadless is a javascipt library that allows you to make reactive SinglePage Appl
 ***
 ![Loadless.js](https://us-east-1.tixte.net/uploads/img.dhravya.dev/l15fdjrdd0a.gif)
 
-### Installation
-```
-add this script tag:     <script src="https://cdn.jsdelivr.net/gh/loadless/loadless.js/src/index.min.js" defer></script>
-```
-
 ### Usage
-```
-write use command here
+Add this script tag in your HTML's header (make sure to `defer` it)
+```html
+<script src="https://cdn.jsdelivr.net/gh/loadless/loadless.js/src/loadless.min.js" defer></script>
 ```
 
 ### Contributing
