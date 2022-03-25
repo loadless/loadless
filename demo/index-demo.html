@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Executes index.js before DOM loads -->
-    <script src="https://cdn.jsdelivr.net/gh/loadless/loadless.js@main/src/loadless.min.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/loadless/loadless.js@main/src/loadless.min.js" defer></script> -->
+    <link rel="stylesheet" href="/dist/animations.css">
+    <script src="/src/loadless.js" defer></script>
 </head>
 
 <body>
@@ -15,10 +17,14 @@
     <a data-loadless-btn="two" href="#world">Click here to say world</a>
 
     <div data-parent>
-        <div data-page="1" id="hello">
+        <div id="hello"
+            data-page="1"
+            data-animate="left">
             Hello
         </div>
-        <div data-page="two" id="world">
+        <div id="world"
+            data-page="two"
+            data-animate="left fadein">
             World
         </div>
     </div>

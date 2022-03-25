@@ -1,8 +1,8 @@
 let loadLessBtn = document.querySelectorAll("[data-loadless-btn]");
 
 let loadless_config = {
-    showNth : 0,
-    showAll : false  
+  showNth: 0,
+  showAll: false,
 };
 
 [].forEach.call(loadLessBtn, function (el) {
@@ -37,14 +37,22 @@ function func_on_load() {
     var children = el.querySelectorAll("[data-page]");
     let n = 0;
     [].forEach.call(children, function (child) {
-        if (loadless_config.showAll === true) {
-            child.style.display = "block";
-            return
-        }
-      if (! n == loadless_config.showNth) {
+      if (loadless_config.showAll === true) {
+        child.style.display = "block";
+        return;
+      }
+      if (!n == loadless_config.showNth) {
         child.style.display = "none";
       }
       n = n + 1;
+      let attr = child.getAttribute("data-animate");
+      if (attr) {
+        console.log("animate");
+        let classes = attr.split(" ");
+        classes.forEach(
+          (className) => (child.classList.add("animate-"+ className))
+        );  
+      }
     });
   });
 }
