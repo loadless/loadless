@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Executes index.js before DOM loads -->
+    <script src="https://cdn.jsdelivr.net/gh/loadless/loadless.js/index.min.js" defer></script>
+</head>
+
+<body>
+    <a data-loadless-btn="1" href="#hello">Click here to say Hello</a> <br>
+    <a data-loadless-btn="two" href="#world">Click here to say world</a>
+
+    <div data-parent>
+        <div data-page="1" id="hello">
+            Hello
+        </div>
+        <div data-page="two" id="world">
+            World
+        </div>
+    </div>
+
+</body>
+
+</html>

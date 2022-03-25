@@ -37,7 +37,7 @@ function func_on_load() {
     var children = el.querySelectorAll("[data-page]");
     let n = 0;
     [].forEach.call(children, function (child) {
-        if (loadless_config.showAll) {
+        if (loadless_config.showAll === true) {
             child.style.display = "block";
             return
         }
