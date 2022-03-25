@@ -12,7 +12,7 @@ loadless is a javascipt library that allows you to make reactive SinglePage Appl
 ### Usage
 Add this script tag in your HTML's header (make sure to `defer` it)
 ```html
-<script src="https://cdn.jsdelivr.net/gh/loadless/loadless.js/src/loadless.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/loadless/loadless.js@main/src/loadless.min.js" defer></script>
 ```
 
 ### Contributing
