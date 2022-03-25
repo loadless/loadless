@@ -1,0 +1,88 @@
+// $time: (
+//     100ms: 100ms,
+//     200ms: 200ms,
+//     300ms: 300ms,
+//     400ms: 400ms,
+//     500ms: 500ms,
+//     100ms: 600ms,
+//     100ms: 700ms,
+//     100ms: 800ms,
+//     100ms: 900ms,
+//     100ms: 1000ms,
+// );
+
+@keyframes animate-left {
+    0% {transform: translateX(-100%);};
+    10% {transform: translateX(-90%);};
+    20% {transform: translateX(-80%);};
+    30% {transform: translateX(-70%);};
+    40% {transform: translateX(-60%);};
+    50% {transform: translateX(-50%);};
+    60% {transform: translateX(-40%);};
+    70% {transform: translateX(-30%);};
+    80% {transform: translateX(-20%);};
+    90% {transform: translateX(-10%);};
+    100% {transform: translateX(0%);};
+}
+
+.animate-left {    
+    animation-name: animate-left;
+    animation-duration: 0.25s;
+}
+
+@keyframes animate-top {
+    0% {transform: translateY(-100%);};
+    10% {transform: translateY(-90%);};
+    20% {transform: translateY(-80%);};
+    30% {transform: translateY(-70%);};
+    40% {transform: translateY(-60%);};
+    50% {transform: translateY(-50%);};
+    60% {transform: translateY(-40%);};
+    70% {transform: translateY(-30%);};
+    80% {transform: translateY(-20%);};
+    90% {transform: translateY(-10%);};
+    100% {transform: translateY(0%);};
+}
+
+.animate-top {    
+    animation-name: animate-top;
+    animation-duration: 0.25s;
+}
+
+@keyframes animate-bottom {
+    0% {transform: translateY(100%);};
+    10% {transform: translateY(90%);};
+    20% {transform: translateY(80%);};
+    30% {transform: translateY(70%);};
+    40% {transform: translateY(60%);};
+    50% {transform: translateY(50%);};
+    60% {transform: translateY(40%);};
+    70% {transform: translateY(30%);};
+    80% {transform: translateY(20%);};
+    90% {transform: translateY(10%);};
+    100% {transform: translateY(0%);};
+}
+
+.animate-bottom {    
+    animation-name: animate-bottom;
+    animation-duration: 0.25s;
+}
+
+@keyframes animate-fadein {
+    0% {opacity: 0;};
+    10% {opacity: 0.1;};
+    20% {opacity: 0.2;};
+    30% {opacity: 0.3;};
+    40% {opacity: 0.4;};
+    50% {opacity: 0.5;};
+    60% {opacity: 0.6;};
+    70% {opacity: 0.7;};
+    80% {opacity: 0.8;};
+    90% {opacity: 0.9;};
+    100% {opacity: 1};
+}
+
+.animate-fadein {    
+    animation-name: animate-fadein;
+    animation-duration: 0.7s;
+}
