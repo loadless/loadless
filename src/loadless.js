@@ -3,7 +3,7 @@ let loadLessBtn = document.querySelectorAll("[data-loadless-btn]");
 let loadless_config = {
   showNth: 0,
   showAll: false,
-  change_delay : 0 
+  change_delay : 10000
 };
 
 [].forEach.call(loadLessBtn, function (el) {
@@ -11,7 +11,7 @@ let loadless_config = {
     var page = document.querySelector(
       "[data-page='" + el.dataset.loadlessBtn + "']"
     );
-    setTimeout(changePage, loadless_config.delay, page);
+    setTimeout(changePage, loadless_config.change_delay, page);
   });
 });
 
