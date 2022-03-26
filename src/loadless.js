@@ -1,6 +1,6 @@
-let loadLessBtn = document.querySelectorAll("[data-loadless-btn]");
+const loadLessBtn = document.querySelectorAll("[data-loadless-btn]");
 
-let loadless_config = {
+const loadless_config = {
   showNth: 0,
   showAll: false,
   change_delay : 10000
