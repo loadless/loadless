@@ -48,7 +48,6 @@ function func_on_load() {
       n = n + 1;
       let attr = child.getAttribute("data-animate");
       if (attr) {
-        console.log("animate");
         let classes = attr.split(" ");
         classes.forEach(
           (className) => (child.classList.add("animate-"+ className))
