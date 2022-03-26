@@ -34,7 +34,7 @@ function func_on_load() {
       return;
     }
   }
-  [].forEach.call(document.querySelectorAll("[data-parent]"), function (el) {
+  [].forEach.call(document.querySelectorAll("[data-loadless-parent]"), function (el) {
     var children = el.querySelectorAll("[data-page]");
     let n = 0;
     [].forEach.call(children, function (child) {
