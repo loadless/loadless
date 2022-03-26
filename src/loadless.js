@@ -17,6 +17,9 @@ const loadless_config = {
 
 changePage = (page) => {
   [].forEach.call(page.parentElement.children, function (el) {
+    if (! el.getAttribute("data-page")) {
+      return;
+    }
     if (el.dataset.page == page.dataset.page) {
       el.style.display = "block";
     } else {
