@@ -15,10 +15,10 @@ loadless is a javascipt library that allows you to make reactive SinglePage Appl
 <font align="left" size="3">
   <ul>
     <li>Create pages that do not load or refresh the page without writing any javascript code.</li>
-    <li>Modals and popups that normally require DOM manipulation can now be created without ever writing a line of javascript</li>
-    <li>Use transitions and animations to load pages without writing CSS</li>
-    <li>Loadless can be customized to meet your needs (no javascript knowledge required).)</li>
-    <li>Easy setup: you just need to add 2 CDN links</li>
+    <li>Modals and popups that normally require DOM manipulation can now be created without ever writing a line of javascript.</li>
+    <li>Use transitions and animations to load pages without writing CSS.</li>
+    <li>Loadless can be customized to meet your needs (no javascript knowledge required).</li>
+    <li>Easy setup: you just need to add 2 CDN links.</li>
   </ul>
 </font>
 
@@ -37,14 +37,18 @@ If you want to make the best out of loadless, link this CSS cdn. It's optional t
 
 # Usage
 So basically to let the javascript code know what is a page and what is not, you need to give the page an attribute 
-<br> `data-page = "number or word here"` 
-<br>. 
+<br> 
+```html
+data-page = "number or word here"
+```
+<br>
 Make sure to give an id to the div too as that is what would appear in the URL
-
 <br>
 Then all you need to do is to link the page to an <a> tag or whatever.
-<br>
-`data-loadless-btn="the value that you gave to the page you want to link"`
+<br> 
+```html
+  data-loadless-btn="value of the page"
+```
 <br>
 Also give the link an href set to the ID you provided above.
 
