@@ -47,7 +47,7 @@ Make sure to give an id to the div too as that is what would appear in the URL
 Then all you need to do is to link the page to an <a> tag or whatever.
 <br> 
 ```html
-  data-loadless-btn="value of the page"
+data-loadless-btn="value of the page"
 ```
 <br>
 Also give the link an href set to the ID you provided above.
@@ -75,6 +75,17 @@ Here is some demo code to help you get started
     </div>
  ```
 
+#animations
+To add animations just link the CDN provided at the top and write the animation name in the data-animate attribute. Have a look at animations available
+  <font align="left" size="2">
+  <ul>
+    <li>top</li>
+    <li>left</li>
+    <li>bottom</li>
+    <li>right</li>
+    <li>fadein</li>
+  </ul>
+</font>
 
 ***
 Readme made with 💖 using [README Generator by Dhravya Shah](https://github.com/Dhravya/readme-generator)
