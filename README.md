@@ -40,16 +40,14 @@ So basically to let the javascript code know what is a page and what is not, you
 <br> 
 ```html
 data-page = "number or word here"
+
+data-loadless-btn="value of the page"
 ```
 <br>
 Make sure to give an id to the div too as that is what would appear in the URL
 <br>
-Then all you need to do is to link the page to an <a> tag or whatever.
+Then link the page to an <a> tag or whatever.
 <br> 
-```html
-data-loadless-btn="value of the page"
-```
-<br>
 Also give the link an href set to the ID you provided above.
 
 # Example
