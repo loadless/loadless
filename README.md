@@ -73,9 +73,8 @@ Here is some demo code to help you get started
     </div>
  ```
 
-#animations
 To add animations just link the CDN provided at the top and write the animation name in the data-animate attribute. Have a look at animations available
-  <font align="left" size="2">
+<font align="left" size="2">
   <ul>
     <li>top</li>
     <li>left</li>
