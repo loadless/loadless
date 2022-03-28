@@ -1,11 +1,11 @@
-<div align="center">
-<img src="https://millenia.tech/logo.png">
-<h1 align="center">Loadless.js</h1>
-<br />
-<img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg" /><br>
-<br>
-loadless is a javascipt library that allows you to make reactive SinglePage Applications  without ever reloading the page
-</div>
+<img src="https://millenia.tech/logo.png" alt="Loadless Logo" style="float: left; margin: 0 10px 0 0;" align="left" height="150" width="150">
+
+## LoadLess
+
+Loadless is a javascipt library that allows you to make reactive SinglePage Applications  without ever reloading the page
+
+***
+<br><br>
 
 ***
 ![Loadless.js](https://us-east-1.tixte.net/uploads/img.dhravya.dev/l15fdjrdd0a.gif)
@@ -15,10 +15,10 @@ loadless is a javascipt library that allows you to make reactive SinglePage Appl
 <font align="left" size="3">
   <ul>
     <li>Create pages that do not load or refresh the page without writing any javascript code.</li>
-    <li>Modals and popups that normally require DOM manipulation can now be created without ever writing a line of javascript.</li>
+    <li>Modals and popups that normally require DOM manipulation can now be created very easily, right in HTML.</li>
     <li>Use transitions and animations to load pages without writing CSS.</li>
-    <li>Loadless can be customized to meet your needs (no javascript knowledge required).</li>
-    <li>Easy setup: you just need to add 2 CDN links.</li>
+    <li>Loadless can be customized to meet your needs.</li>
+    <li>Easy setup: you just need to add 2 CDN links (one optional CSS animations file).</li>
   </ul>
 </font>
 
@@ -43,30 +43,32 @@ data-page = "number or word here"
 
 data-loadless-btn="value of the page"
 ```
+
+The parent div needs to have the `data-loadless-parent` attribute
+
 <br>
-Make sure to give an id to the div too as that is what would appear in the URL
+If you want to make the page "linkable" (make it a URL), make sure to give it an ID. 
 <br>
 Then link the page to an <a> tag or whatever.
-<br> 
-Also give the link an href set to the ID you provided above.
+
 
 # Example
 Here is some demo code to help you get started
 ```html
+  <!--  Href is given so that the page jumps to the link  -->
   <a data-loadless-btn="1" href="#hello">Click here to say Hello</a> <br>
     <a data-loadless-btn="two" href="#world">Click here to say world</a>
 
     <div data-loadless-parent>
-        <div id="hello"
-            data-page="1"
-            data-animate="left">
+        <!--  When Hello is visible, world will be hidden  -->
+        <div id="hello" data-page="1" data-animate="left">
             Hello
         </div>
-        <div id="world"
-            data-page="two"
-            data-animate="left fadein">
+       <!-- add data-animate to animate. you can also add your own CSS file with animations starting with `animate-name` -->
+        <div id="world" data-page="two" data-animate="left fadein">
             World
         </div>
+       <!-- This is the div that won't disappear -->
         <div>
             another div 
         </div>
