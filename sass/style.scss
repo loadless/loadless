@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;900&family=Montserrat:wght@100;200;300;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap');
+
+
+*::-webkit-scrollbar {
+    width: 14px;
+    z-index: 100;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #14111B;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(79, 121, 194);
+    border-radius: 20px;
+    border: 5px solid #14111B;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #0086FF;
+    border: 5px solid #14111B;
+  }
+
+
+body {
+    background-color: #001220;
+
+    .hero {
+        background-image: url(../assets/bg.svg);
+        height: 100vh;
+        background-size: cover;
+        width: 100%;
+        overflow: hidden;
+        background-color: rgb(31,27,27); 
+
+
+        .logo {
+            position: absolute;
+            width: 250px;
+            margin-left: 71%;
+            margin-top: 65px;
+        }
+
+        .hero-text {
+            margin-top: 20vh;
+            margin-left: 90px;
+            color: rgba(255, 255, 255, 0.966);
+            h1 {
+                color: #ffffff;
+                font-size: 2.5rem;
+                font-family: montserrat;
+            }
+            h4 {
+                margin-top: 20px;
+                font-weight: 500;
+                font-size: 20px;
+                color: #c1c1c1;
+                font-family: quicksand;          
+            }
+            p {
+                margin-right: 60%;
+                margin-top: 20px;
+                font-size: 1.6rem;
+                font-weight: 600;
+                font-family: quicksand;
+            }
+            button {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .logo {
+        display: none;
+    }
+
+    .hero-text {
+        .heading {
+            .loda {
+                font-size: 2rem;
+            }
+
+            .pp {
+                font-size: 1.2rem;
+                margin-right: 46%;
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .hero {
+        .hero-text {
+            width: 100%;
+            .heading {
+                .amoga {
+                    color: #fff;
+                }
+                margin-left: 0;
+                .loda {
+                    text-align: center;
+                    margin-left: 0%;
+                    margin-right: 20%;
+                }
+    
+                .pp {
+                    text-align: center;
+                    margin-left: 0%;
+                    margin-right: 20%;
+                }
+
+                .check {
+                    text-align: center;
+                    margin-left: 0%;
+                    margin-right: 20%;
+                }
+
+                .butts {
+                    margin-left: 0px;
+                    text-align: center;
+                    margin-right: 20%;
+                }
+            }
+        }
+        
+        .links-right-transparent {
+            background-color: #001220;
+        }
+
+        .navbar-right-transparent {
+            background-color: #001220;
+        }
+    }
+
+}
+@media (max-width: 660px) {
+    .hero {
+        .hero-text {
+            .heading {
+                .amoga {
+                    color: #0086FF;
+                }
+                margin-left: -10%;
+                .loda {
+                    font-size: 1.5rem;
+                }
+    
+                .pp {
+                    font-size: .9rem;
+                }
+
+                .check {
+                    font-size: .9rem;
+                }
+
+                .butts {
+                    padding: 10px 15px 10px 15px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 474px) {
+    .hero {
+        .hero-text {
+            .heading {
+                .amoga {
+                    color: #0086FF;
+                }
+                margin-left: -15%;
+                .loda {
+                    font-size: 1.3rem;
+                    padding-right: 10%;
+                    margin-left: 5%;
+
+                }
+    
+                .pp {
+                    font-size: .9rem;
+                    margin-right: 30%;
+                    margin-left: 5%;
+                }
+
+                .check {
+                    font-size: .9rem;
+                    margin-right: 30%;
+                    margin-left: 5%;
+
+                }
+
+                .butts {
+                    margin-right: 30%;
+                    margin-left: 5%;
+
+                    button {
+                        padding: 5px 20px 5px 20px;
+                    }
+
+                    .butt2 {
+                        margin-top: 10px;
+                        margin-left: 0px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Loadless.js</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo.svg"> <!--favicon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadless/loadless@main/dist/animations.css"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> <!--font awesome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadless/loadless.js@main/dist/animations.css"> <!--loadless animations-->
+    <script src="https://cdn.jsdelivr.net/gh/loadless/loadless.js@main/src/loadless.min.js" defer></script> <!--loadless CDN-->
+    <link rel="stylesheet" href="./sass/fernosa.css"> <!--Fernosa UI framework-->
+    <link rel="stylesheet" href="./sass/style.css"> <!--main stylesheet-->
+</head>
+<body>
+    <div data-loadless-parent>
+        <section class="hero" data-page="1" id="home">
+          <nav class="navbar-right-transparent animate-top" id = 'nav'>
+      
+            <div class="logo-right-white select-black" id="bolt">Loadless</div>
+      
+            <ul class="nav-links-right-white">
+      
+              <input type="checkbox" id="checkbox_toggle" />
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      
+              <div class="links-right-transparent linksu" id="links">
+                <li class="disabled" id="about"><a>HOME</a></li>
+                <li><a href="#documentation" data-loadless-btn="2" class="select-black hover-black linksu" id="contact">DOCS</a></li>
+                <li class="nav-divider color-grey linksu">|</li>
+                <li><a id="iconTwo" href="https://github.com/loadless/loadless" target="_blank"><i class="fab fa-github-alt color-white hover-black"></i><span id="navcon-hover" class="navcon2">Github</span></a></li>
+                <li><a id="iconThree" data-loadless-btn="2"><i class="fab fa-discord color-white hover-black"></i><span id="navcon-hover" class="navcon3">Discord</span></a></li>
+              </div>
+            </ul>
+          </nav>
+          <img src="./assets/logo.svg" style="user-select: none;" class="logo" alt="">
+          <div class="hero-text" style="user-select: none;">
+            <div class="textgroup animate-left" data-animate="left">
+                <div class="heading">
+                    <h1 class="loda">LOAD FAST WITH <span class="color-blue amoga">LOADLESS</span> <br> ANIMATIONS AND BEYOND</h1>
+                    <p class="pp">Create popups, modals, page transitions and create pages that do not reload the browser, without writing javascript or CSS!</p>
+                    <h4 class="check"><i class="fas fa-check-circle text-blue"></i> No JS or CSS Knowledge Required</h6>
+                    <div class="butts">
+                      <button style="user-select: none;" class="fernobutton bg-blue color-white bghover-darkblue butt1"><a style="color:#fff" href="#"><i class="fa fa-download"></i> Source Code</a></button>
+                      <button style="margin-left: 10px; user-select: none;" class="fernobutton butt2 bg-blue color-white bghover-darkblue"><i class="fa fa-book" aria-hidden="true"></i>
+                          Documentation</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="docs" data-page="2" id="documentation">
+          <nav class="navbar-right-transparent animate-top" id = 'nav'>
+      
+            <div class="logo-right-white select-black" id="bolt">Loadless</div>
+      
+            <ul class="nav-links-right-white">
+      
+              <input type="checkbox" id="checkbox_toggle" />
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      
+              <div class="links-right-transparent linksu" id="links">
+                <li <a href="#home" data-loadless-btn="1" class="select-black hover-black linksu" id="abt">HOME</a></li>
+                <li class="disabled" id="documentation">DOCS</li>
+                <li class="nav-divider color-grey linksu">|</li>
+                <li><a id="iconTwo" href="https://github.com/loadless/loadless" target="_blank"><i class="fab fa-github-alt color-white hover-black"></i><span id="navcon-hover" class="navcon2">Github</span></a></li>
+                <li><a id="iconThree" data-loadless-btn="2"><i class="fab fa-discord color-white hover-black"></i><span id="navcon-hover" class="navcon3">Discord</span></a></li>
+              </div>
+            </ul>
+          </nav>
+        </section>
+          
+          
+
+</body>
+</html>
