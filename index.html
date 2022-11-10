@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> <!--font awesome-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadless/loadless.js@main/dist/animations.css"> <!--loadless animations-->
     <script src="https://cdn.jsdelivr.net/gh/loadless/loadless.js@main/src/loadless.min.js" defer></script> <!--loadless CDN-->
-    <link rel="stylesheet" href="./sass/fernosa.css"> <!--Fernosa UI framework-->
-    <link rel="stylesheet" href="./sass/style.css"> <!--main stylesheet-->
+    <link rel="stylesheet" href="./css/fernosa.css"> <!--Fernosa UI framework-->
+    <link rel="stylesheet" href="./css/style.css"> <!--main stylesheet-->
 </head>
 <body>
     <div data-loadless-parent>
+
+      <!--landing page-->
         <section class="hero" data-page="1" id="home">
           <nav class="navbar-right-transparent animate-top" id = 'nav'>
       
@@ -30,7 +32,7 @@
                 <li><a href="#documentation" data-loadless-btn="2" class="select-black hover-black linksu" id="contact">DOCS</a></li>
                 <li class="nav-divider color-grey linksu">|</li>
                 <li><a id="iconTwo" href="https://github.com/loadless/loadless" target="_blank"><i class="fab fa-github-alt color-white hover-black"></i><span id="navcon-hover" class="navcon2">Github</span></a></li>
-                <li><a id="iconThree" data-loadless-btn="2"><i class="fab fa-discord color-white hover-black"></i><span id="navcon-hover" class="navcon3">Discord</span></a></li>
+                <li><a id="iconThree" href="https://discord.gg/JM7d5fhDb7" target="_blank"><i class="fab fa-discord color-white hover-black"></i><span id="navcon-hover" class="navcon3">Discord</span></a></li>
               </div>
             </ul>
           </nav>
@@ -42,19 +44,21 @@
                     <p class="pp">Create popups, modals, page transitions and create pages that do not reload the browser, without writing javascript or CSS!</p>
                     <h4 class="check"><i class="fas fa-check-circle text-blue"></i> No JS or CSS Knowledge Required</h6>
                     <div class="butts">
-                      <button style="user-select: none;" class="fernobutton bg-blue color-white bghover-darkblue butt1"><a style="color:#fff" href="#"><i class="fa fa-download"></i> Source Code</a></button>
-                      <button style="margin-left: 10px; user-select: none;" class="fernobutton butt2 bg-blue color-white bghover-darkblue"><i class="fa fa-book" aria-hidden="true"></i>
-                          Documentation</button>
+                      <button style="user-select: none;" class="fernobutton bg-blue color-white bghover-darkblue butt1"><a style="color:#fff" href="#"><a class="color-white" href="https://dev.to/dhravya/create-reactive-pages-without-any-javascript-6o7" target="_blank"><i class="fa fa-question" aria-hidden="true"></i> How It Works</a></button>
+                      <button style="margin-left: 10px; user-select: none;" class="fernobutton butt2 bg-blue color-white bghover-darkblue" data-loadless-btn="2"><i class="fa fa-book" aria-hidden="true"></i>
+                          <a href="#documentation" class="color-white">Documentation</a></button>
                     </div>
                 </div>
             </div>
           </div>
         </section>
 
+
+        <!--documentation-->
         <section class="docs" data-page="2" id="documentation">
-          <nav class="navbar-right-transparent animate-top" id = 'nav'>
+          <nav class="navbar-right-transparent animate-top" id = 'docnav'>
       
-            <div class="logo-right-white select-black" id="bolt">Loadless</div>
+            <div class="logo-right-white select-blue" id="bolt">Loadless</div>
       
             <ul class="nav-links-right-white">
       
@@ -62,17 +66,80 @@
               <label for="checkbox_toggle" class="hamburger">&#9776;</label>
       
               <div class="links-right-transparent linksu" id="links">
-                <li <a href="#home" data-loadless-btn="1" class="select-black hover-black linksu" id="abt">HOME</a></li>
-                <li class="disabled" id="documentation">DOCS</li>
+                <li><a href="#home" data-loadless-btn="1" class="select-blue hover-blue linksu" id="abt">HOME</a></li>
+                <li class="disabled" id="documentation"><a>DOCS</a></li>
                 <li class="nav-divider color-grey linksu">|</li>
-                <li><a id="iconTwo" href="https://github.com/loadless/loadless" target="_blank"><i class="fab fa-github-alt color-white hover-black"></i><span id="navcon-hover" class="navcon2">Github</span></a></li>
-                <li><a id="iconThree" data-loadless-btn="2"><i class="fab fa-discord color-white hover-black"></i><span id="navcon-hover" class="navcon3">Discord</span></a></li>
+                <li><a id="iconTwo" href="https://github.com/loadless/loadless" target="_blank"><i class="fab fa-github-alt color-white hover-blue"></i><span id="navcon-hover" class="navcon2">Github</span></a></li>
+                <li><a id="iconThree" href="https://discord.gg/JM7d5fhDb7" target="_blank"><i class="fab fa-discord color-white hover-blue"></i><span id="navcon-hover" class="navcon3">Discord</span></a></li>
               </div>
             </ul>
           </nav>
+
+          <div class="sidebar animate-left" data-animate="left">
+            <a class="sidelink1" data-loadless-btn="3" href="#loadless">Loadless Docs</a>
+            <a class="sidelink2" data-loadless-btn="4" href="#animations">Animation Docs</a>
+          </div>
+          
+          <!-- Page content -->
+          <div class="content">
+            <div class="page1">
+              <img src="./assets/logodoc.svg" class="logodoc" alt="">
+            </div>
+            <div class="page1" data-page="3">
+              <div class="linking">
+                <h1>LINK THE JS CDN</h1>
+                <div class="cdncss">
+                  <h2 class="color-white font-montserrat">Inside the header tags</h2>
+                  <div class="cdnbox text-skyblue">
+                    <h4 class="color-blue"> &ltscript src="https://cdn.jsdelivr.net/gh/loadless/loadless@main/dist/loadless.min.js" defer script>&lt/script> </h4>
+                  </div>
+                </div>
+                <h1 class="att">PARENT ATTRIBUTE</h1>
+                <h2 class="color-white font-montserrat">The parent div needs to have a <span class="color-blue">data-loadless-parent</span> attribute</h2>
+                <h3 class="color-white font-montserrat">Example: <span class="">&ltdiv data-loadless-parent>&lt/div></span></p>
+
+                <h1 class="att">PAGE ATTRIBUTE</h1>
+                <h2 class="color-white font-montserrat">To let the library know what is a page or a modal, the div needs to have the attrbiute <br> <span class="color-blue">data-page = "number or word here"
+                </span></h2>
+                <h3 class="color-white font-montserrat">Example: <span class="">&ltdiv data-page = "1">&lt/div></span></p>
+                <h1 class="att">LOAD ATTRIBUTE</h1>
+                <h2 class="color-white font-montserrat">To switch between pages and activate modals, the triggering button or link needs to have a <span class="color-blue">data-loadless-btn="value of the page"</span> attribute</h2>
+                <h3 class="color-white font-montserrat">Example: <span class="">&ltdiv data-loadless-btn="1">&lt/div></span></p>
+              </div>
+              <img src="./assets/layered-waves-haikei.svg" class="waves" width="100%" alt="">
+            </div>
+
+            <div class="page1 linking" data-page="4">
+              <h1>LINK THE CSS CDN</h1>
+                <div class="cdncss">
+                  <h2 class="color-white font-montserrat">Inside the header tags</h2>
+                  <div class="cdnbox text-skyblue">
+                    <h4 class="color-blue"> &ltlink rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadless/loadless@main/dist/animations.css">  </h4>
+                  </div>
+                </div>
+
+              <h1 class="att">ANIMATE ATTRIBUTE</h1>
+              <h2 class="color-white font-montserrat">Give the tag a <span class="color-blue">data-animate = "animation name"</span> attribute</h2>
+              <h3 class="color-white font-montserrat">Example: <span class="">&lth1 data-animate = "left">&lt/h1></span></p>
+
+              <h1 class="att">ANIMATION CLASS</h1>
+              <h2 class="color-white font-montserrat">Give the tag a class of the animation <span class="color-blue">class = "animate-AnimationName"</span> attribute</h2>
+              <h3 class="color-white font-montserrat">Example: <span class="">&lth1 data-animate = "left" class = "animate-left">&lt/h1></span></p>
+
+
+              <h1 class="att">ANIMATION LIST</h1>
+              <h2 class="color-white font-montserrat">top</h2>
+              <h2 class="color-white font-montserrat">left</h2>
+              <h2 class="color-white font-montserrat">bottom</h2>
+              <h2 class="color-white font-montserrat">right</h2>
+              <h2 class="color-white font-montserrat">fadein</h2>
+  
+              <img src="./assets/layered-waves-haikei.svg" class = "waveani" width="100%" alt="">
+
+            </div>
+          </div>
+
         </section>
-          
-          
 
 </body>
 </html>
