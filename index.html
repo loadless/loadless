@@ -58,7 +58,7 @@
         <section class="docs" data-page="2" id="documentation">
           <nav class="navbar-right-transparent animate-top" id = 'docnav'>
       
-            <div class="logo-right-white select-blue" id="bolt">Loadless</div>
+            <div class="logo-right-white select-blue" id="loady">Loadless</div>
       
             <ul class="nav-links-right-white">
       
@@ -84,6 +84,7 @@
           <div class="content">
             <div class="page1">
               <img src="./assets/logodoc.svg" class="logodoc" alt="">
+              <hr class="hr1">
             </div>
             <div class="page1" data-page="3">
               <div class="linking">
@@ -91,21 +92,43 @@
                 <div class="cdncss">
                   <h2 class="color-white font-montserrat">Inside the header tags</h2>
                   <div class="cdnbox text-skyblue">
-                    <h4 class="color-blue"> &ltscript src="https://cdn.jsdelivr.net/gh/loadless/loadless@main/dist/loadless.min.js" defer script>&lt/script> </h4>
+                    <h4> &ltscript src="https://cdn.jsdelivr.net/gh/loadless/loadless@main/dist/loadless.min.js" defer script>&lt/script> </h4>
                   </div>
                 </div>
+                <hr class="hr2">
                 <h1 class="att">PARENT ATTRIBUTE</h1>
-                <h2 class="color-white font-montserrat">The parent div needs to have a <span class="color-blue">data-loadless-parent</span> attribute</h2>
-                <h3 class="color-white font-montserrat">Example: <span class="">&ltdiv data-loadless-parent>&lt/div></span></p>
+                <h2 class="color-silver font-montserrat">The parent div needs to have a <span class="color-lightblue">data-loadless-parent</span> attribute</h2>
+                <div class="cdncss">
+                  <div class="cdnbox text-skyblue">
+                    <h4 class="code">&ltdiv data-loadless-parent>&lt/div></h4>
+                  </div>
+                </div>
+                <hr class="hr2">
 
+              
                 <h1 class="att">PAGE ATTRIBUTE</h1>
-                <h2 class="color-white font-montserrat">To let the library know what is a page or a modal, the div needs to have the attrbiute <br> <span class="color-blue">data-page = "number or word here"
+                <h2 class="color-silver font-montserrat">To let the library know what is a page or a modal, the div needs to have the attrbiute <br> <span class="color-lightblue">data-page = "number or word"
                 </span></h2>
-                <h3 class="color-white font-montserrat">Example: <span class="">&ltdiv data-page = "1">&lt/div></span></p>
+                <div class="cdncss">
+                  <div class="cdnbox text-skyblue">
+                    <h4 class="code">&ltdiv data-page = "1">&lt/div></h4>
+                  </div>
+                </div>
+
+                <hr class="hr2">
+
                 <h1 class="att">LOAD ATTRIBUTE</h1>
-                <h2 class="color-white font-montserrat">To switch between pages and activate modals, the triggering button or link needs to have a <span class="color-blue">data-loadless-btn="value of the page"</span> attribute</h2>
-                <h3 class="color-white font-montserrat">Example: <span class="">&ltdiv data-loadless-btn="1">&lt/div></span></p>
+                <h2 class="color-silver font-montserrat">To switch between pages and activate modals, the triggering button or link needs to have a <br> <span class="color-lightblue">data-loadless-btn="value of the page"</span> attribute</h2>
+                
+                <div class="cdncss">
+                  <div class="cdnbox text-skyblue">
+                    <h4>&ltdiv data-loadless-btn="1">&lt/div></h4>
+                  </div>
+                </div>
+
               </div>
+              <hr class="hr2">
+
               <img src="./assets/layered-waves-haikei.svg" class="waves" width="100%" alt="">
             </div>
 
@@ -114,25 +137,34 @@
                 <div class="cdncss">
                   <h2 class="color-white font-montserrat">Inside the header tags</h2>
                   <div class="cdnbox text-skyblue">
-                    <h4 class="color-blue"> &ltlink rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadless/loadless@main/dist/animations.css">  </h4>
+                    <h4 class="color-lightblue"> &ltlink rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadless/loadless@main/dist/animations.css">  </h4>
                   </div>
                 </div>
-
+                <hr class="hr2">
               <h1 class="att">ANIMATE ATTRIBUTE</h1>
-              <h2 class="color-white font-montserrat">Give the tag a <span class="color-blue">data-animate = "animation name"</span> attribute</h2>
-              <h3 class="color-white font-montserrat">Example: <span class="">&lth1 data-animate = "left">&lt/h1></span></p>
+              <h2 class="color-white font-montserrat">Give the tag a <span class="color-lightblue">data-animate = "animation name"</span> attribute</h2>
+              <div class="cdncss">
+                <div class="cdnbox text-skyblue">
+                  <h4 class="code">&lth1 data-animate = "left">&lt/h1></h4>
+                </div>
+              </div>
 
+              <hr class="hr2">
               <h1 class="att">ANIMATION CLASS</h1>
-              <h2 class="color-white font-montserrat">Give the tag a class of the animation <span class="color-blue">class = "animate-AnimationName"</span> attribute</h2>
-              <h3 class="color-white font-montserrat">Example: <span class="">&lth1 data-animate = "left" class = "animate-left">&lt/h1></span></p>
-
+              <h2 class="color-white font-montserrat">Give the tag a class of the animation <span class="color-lightblue">class = "animate-AnimationName"</span> attribute</h2>
+              <div class="cdncss">
+                <div class="cdnbox text-skyblue">
+                  <h4 class="code">&lth1 data-animate = "left" class = "animate-left">&lt/h1></h4>
+                </div>
+              </div>
+              <hr class="hr2">
 
               <h1 class="att">ANIMATION LIST</h1>
-              <h2 class="color-white font-montserrat">top</h2>
-              <h2 class="color-white font-montserrat">left</h2>
-              <h2 class="color-white font-montserrat">bottom</h2>
-              <h2 class="color-white font-montserrat">right</h2>
-              <h2 class="color-white font-montserrat">fadein</h2>
+              <h2 class="color-white font-montserrat ani">top</h2>
+              <h2 class="color-white font-montserrat ani">left</h2>
+              <h2 class="color-white font-montserrat ani">bottom</h2>
+              <h2 class="color-white font-montserrat ani">right</h2>
+              <h2 class="color-white font-montserrat ani">fadein</h2>
   
               <img src="./assets/layered-waves-haikei.svg" class = "waveani" width="100%" alt="">
 
