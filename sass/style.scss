@@ -31,7 +31,6 @@ body {
         height: 100vh;
         background-size: cover;
         width: 100%;
-        overflow: hidden;
         background-color: rgb(31,27,27); 
 
 
@@ -208,4 +207,117 @@ body {
             }
         }
     }
+}
+
+
+
+/* The side navigation menu */
+.sidebar {
+    margin-top: 40px;
+    padding: 0;
+    width: 200px;
+    background-color: #001220;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a, inactive {
+    display: block;
+    font-family: montserrat;
+    color: #ffffff;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #0086FF;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #0086FF;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+.logodoc {
+    width: 25%;
+    margin-left: 35%;
+    margin-top: 50px;
+}
+
+.waves {
+    position: absolute;
+    margin-left: -15%;
+    margin-top: 200px;
+}
+
+.waveani {
+    position: absolute;
+    margin-left: -16%;
+    margin-top: 200px;
+}
+
+.linking {
+    margin-left: 20px;
+    margin-top: 60px;
+
+    h1 {
+        color: #0086FF;
+        font-size: 64px;
+        font-family: poppins;
+    }
+
+    .att {
+        margin-top: 80px;
+    }
+
+    .cdnbox {
+        display: flex;
+        align-items: center;
+        padding: 20px 5px 20px 5px;
+        width: 90%;
+        justify-content: center;
+        border-radius: 5px;
+        height: 5vh;
+        margin-top: 30px;
+        font-family: raleway;
+        border: #00b2ff solid 2px;
+        scrollbar-width: none;
+
+  
+        h4 {
+          font-weight: 700;
+          text-align: center;
+        }
+      }
 }
