@@ -8,7 +8,7 @@ Loadless is a javascipt library that allows you to make reactive SinglePage Appl
 <br><br>
 
 ***
-![Loadless.js](https://us-east-1.tixte.net/uploads/img.dhravya.dev/l15fdjrdd0a.gif)
+![Loadless.js](https://streamable.com/iedrja)
 
 # 👀 Why Loadless?
 
